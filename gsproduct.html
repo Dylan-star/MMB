@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="index.html" class="logo" >
+            <
+        </a>
+        <span>凑单品</span>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--分类下拉框-->
+<div class="gsClassify">
+    <ul class="gsTitle">
+        <li class="shop">京东<img src="images/arrow1.gif" alt=""></li>
+        <li class="area">华东<img src="images/arrow1.gif" alt=""></li>
+        <li class="price">全部价格<img src="images/arrow1.gif" alt=""></li>
+    </ul>
+    <ul class="gsContent">
+        <li><a href="#">全部价格</a></li>
+    </ul>
+</div>
+
+<!--产品区域-->
+<div class="gsMain clearfix">
+    <!--<div class="gsPro">-->
+        <!--<img src="images/deli.png" alt="">-->
+        <!--<p>名称</p>-->
+        <!--<span>价格</span>-->
+        <!--<span>去凑单</span>-->
+    <!--</div>-->
+</div>
+
+
+
+
+<!--底部-->
+<section id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="getshopTemp">
+{{each result as value i}}
+<li><a href="#" data-shopId="{{value.shopId}}">{{value.shopName}}</a></li>
+{{/each}}
+</script>
+<script type="text/html" id="getshopareaTemp">
+    {{each result as value i}}
+    <li><a href="#" data-areaId="{{value.areaId}}">{{value.areaName}}</a></li>
+    {{/each}}
+</script>
+<script type="text/html" id="gsMainTemp">
+    {{each result as value i}}
+    <div class="gsPro">
+        <img src="{{value.productImg}}" alt="">
+        <p>{{value.productName.slice(0,14)}}</p>
+        <span>{{value.productPrice}}</span>
+        <span>去凑单</span>
+    </div>
+    {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/gsproduct.js"></script>
+<script src="js/base.js"></script>
+</html>

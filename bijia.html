@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bijia.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="index.html" class="logo" >
+            <img src="images/header_logo.png" alt="" >
+        </a>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <div class="searchBox">
+        <input type="search" placeholder="请输入你想比价的商品">
+    </div>
+    <div class="btn">
+        <a href="javascript:;">搜索</a>
+    </div>
+</section>
+<div id="nav">
+    <a href="index.html">首页</a>
+    >
+    <a href="category.html">全部分类</a>
+    >
+    <a href="#" id="change"></a>
+    <input type="button" value="筛选">
+</div>
+<div id="detail">
+    <!--<h4>乐视TV</h4>-->
+    <!--<img src="images/leshi.jpg" alt="">-->
+    <!--<div class="collect"><img src="images/sc.jpg" alt=""></div>-->
+</div>
+<div id="tab">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#bijiabuy" aria-controls="home" role="tab" data-toggle="tab">比价购买</a></li>
+        <li role="presentation"><a href="#canshu" aria-controls="profile" role="tab" data-toggle="tab">产品参数</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">评价</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="bijiabuy">1</div>
+        <div role="tabpanel" class="tab-pane" id="canshu">2</div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <!--<div class="id-date">-->
+                <!--<div class="userId">123</div>-->
+                <!--<div class="data">9/7</div>-->
+            <!--</div>-->
+            <!--<div class="from">京东</div>-->
+            <!--<div class="mesText">123</div>-->
+            <!--<div class="moreCom">-->
+                <!--查看更多评价-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<div class="price"></div>
+
+
+
+<!--底部-->
+<section id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="deTemp">
+{{each result as value i}}
+    <h4>{{value.productName}}</h4>
+    {{#value.productImg}}
+    <div class="collect"><img src="images/sc.jpg" alt=""></div>
+{{/each}}
+</script>
+<script type="text/html" id="mesTemp">
+    {{each result as value i}}
+    <div class="id-date">
+        <div class="userId">{{value.comName}}</div>
+        <div class="data">{{value.comTime}}</div>
+    </div>
+    <div class="from">{{value.comFrom}}</div>
+    <div class="mesText">{{value.comContent}}</div>
+    {{/each}}
+    <div class="moreCom">
+        查看更多评价
+    </div>
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/bijia.js"></script>
+<script src="js/base.js"></script>
+</html>

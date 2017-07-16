@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/coupon.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="index.html" class="logo" >
+            <
+        </a>
+        <span>优惠券</span>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--主体-->
+<div class="youhuiquan clearfix">
+    <!--<div>-->
+        <!--<a href="#">-->
+            <!--<img src="images/deli.png" alt="">-->
+            <!--<h3>deli</h3>-->
+        <!--</a>-->
+    <!--</div>-->
+</div>
+
+<!--分类-->
+<div id="nav">
+    <a href="index.html">首页</a>
+    >
+    <a href="#" id="change">优惠券</a>
+</div>
+<div class="blank"></div>
+<!--底部-->
+<section id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="yoouhuiquanTemp">
+    {{each result as value i}}
+    <div>
+        <a href="{{value.couponLink}}?coupontitle={{value.couponTitle}}&couponid={{value.couponId}}">
+            <img src="{{value.couponImg}}" alt="">
+            <h3>{{value.couponTitle}}</h3>
+        </a>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/coupon.js"></script>
+<script src="js/base.js"></script>
+</html>

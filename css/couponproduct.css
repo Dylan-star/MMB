@@ -1,0 +1,135 @@
+#header {
+  position: relative;
+  height: 44px;
+  background-color: #F4483E;
+}
+#header .logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font: 400 32px consolas;
+  margin-left: 15px;
+}
+#header span {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tip {
+  height: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #bbb;
+  background-color: #fff;
+}
+#couponProduct {
+  background-color: #fff;
+  padding: 15px 10px;
+}
+#couponProduct .media {
+  border-bottom: 1px solid #eee;
+}
+#couponProduct .media .media-left img {
+  width: 100px;
+  height: 80px;
+}
+#couponProduct .media-body div p:nth-of-type(2) {
+  font-weight: bold;
+}
+#couponProduct .media-body div p:last-of-type {
+  color: orange;
+}
+#nav {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(#fff, #ECECEC);
+  line-height: 40px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font: 400 15px/40px consolas;
+}
+.blank {
+  height: 20px;
+  background-color: #fff;
+}
+#galleryOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100000;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  display: none;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+#galleryOverlay .gallerySlider {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  -moz-transition: left 0.4s ease;
+  -webkit-transition: left 0.4s ease;
+  transition: left 0.4s ease;
+}
+#galleryOverlay .gallerySlider div {
+  height: 100%;
+  line-height: 1px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+#galleryOverlay .gallerySlider div img {
+  height: 160px;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%);
+}
+#galleryOverlay .arrow {
+  position: absolute;
+  width: 90%;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#galleryOverlay .arrow .left {
+  display: block;
+  width: 43px;
+  height: 58px;
+  line-height: 100px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.4;
+  background: url("../images/arrows.png");
+}
+#galleryOverlay .arrow .right {
+  display: block;
+  width: 43px;
+  height: 58px;
+  line-height: 100px;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.4;
+  background: url("../images/arrows.png") -43px 0;
+}
+#galleryOverlay.visible {
+  opacity: 1;
+}

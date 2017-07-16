@@ -1,0 +1,51 @@
+body {
+  background-color: #fff;
+}
+#header {
+  position: relative;
+  background-color: #FF841D;
+}
+#header .logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font: 400 32px/48px consolas;
+  margin-left: 15px;
+}
+#header span {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navMain {
+  padding: 15px 0 15px 15%;
+  width: 80%;
+  height: 100%;
+}
+.navMain a {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  background-color: #eee;
+}
+.navMain a img {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-top: 6px;
+}
+.navMain a i {
+  font-size: 14px;
+  float: left;
+  font-style: normal;
+  line-height: 28px;
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="index.html" class="logo" >
+            <
+        </a>
+        <span>白菜价-淘宝内部券</span>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<div class="baicaiNavTab clearfix">
+<div class="bcj-title">
+    <ul class="tabs clearfix">
+        <li class="active"><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+        <li><a href="#">123</a></li>
+    </ul>
+</div>
+    <div class="bcjList clearfix">
+
+    </div>
+</div>
+
+
+
+
+<!--底部-->
+<section id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+<div class="goTop">
+    ↑
+</div>
+
+
+</body>
+<script type="text/html" id="baicaijiaTemp">
+{{each result as value i}}
+<li class=""><a href="#" data-titleid="{{value.titleId}}">{{value.title}}</a></li>
+{{/each}}
+</script>
+<script type="text/html" id="baicaijiaProductTmp">
+    <ul class="clearfix">
+        {{each result as value i}}
+        <li class="ui-border-tb ">
+            <a biz-itemid="538754112089" class="gobuy" isconvert="1" href="http://s.click.taobao.com/lkqGHQx" target="_blank"></a>
+            <div class="pic"><i></i>{{#value.productImg}}</div>
+            <div class="inf">
+                <div class="i">
+                    <div class="t">{{#value.productName}}</div>
+                    <div class="pr">{{#value.productPrice}}
+                    </div>
+                </div>
+                <div class="o">
+                    <div class="jindutiao clearfix">
+                       <div class="bar">
+                           <div style="width: 1%;">
+                               <span>1%</span>
+                           </div>
+                       </div>
+                        <span>已领82张</span>
+                        <div class="b clearfix">
+                        <div class="q">{{#value.productCoupon}}</div>
+                        <div class="g">{{#value.productHref}}</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/baicaijia.js"></script>
+<script src="js/base.js"></script>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="coupon.html" class="logo" >
+            <
+        </a>
+        <span>肯德基优惠券</span>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<div class="tip">
+    --点餐前出示手机中的优惠券，即可享受优惠--
+</div>
+<!--主体-->
+<div id="couponProduct">
+    <!--<div class="media">-->
+    <!--<div class="media-left">-->
+    <!--<a href="#">-->
+    <!--<img class="media-object" src="images/deli.png" alt="...">-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div class="media-body">-->
+    <!--<div>-->
+    <!--<p>title</p>-->
+    <!--<p>riqi</p>-->
+    <!--<p>jiage</p>-->
+    <!--<p>youxiaoqi</p>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+
+<div id="galleryOverlay">
+    <div class="gallerySlider">
+
+    </div>
+    <div class="arrow">
+        <a class="left"></a>
+        <a class="right"></a>
+    </div>
+</div>
+
+<!--分类-->
+<div id="nav">
+    <a href="index.html">首页</a>
+    >
+    <a href="#" >优惠券</a>
+    >
+    <a href="#" id="change">肯德基优惠券</a>
+</div>
+<div class="blank"></div>
+<!--底部-->
+<section id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="couproTemp">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="javascript:;">
+                {{#value.couponProductImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <div>
+                <p>{{value.couponProductName}}</p>
+                <p>{{value.couponProductPrice}}</p>
+                <p>{{value.couponProductTime}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/couponproduct.js"></script>
+<script src="js/base.js"></script>
+</html>

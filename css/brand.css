@@ -1,0 +1,156 @@
+body {
+  background-color: #fff;
+}
+#nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  background: linear-gradient(#fff, #ccc);
+  border-color: #ccc;
+  font: 400 14px/41px consolas;
+}
+.title,
+.proPaihang,
+.newMes {
+  background-color: #eee;
+  height: 40px;
+  width: 100%;
+  font-size: 17px;
+  color: #A97E52;
+  padding-left: 15px;
+  margin-top: 10px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.brandcontentClassify {
+  width: 100%;
+}
+.brandcontentClassify ul {
+  width: 100%;
+  height: 100%;
+}
+.brandcontentClassify ul li {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+.brandcontentClassify ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.brandcontentClassify ul li a span:first-of-type {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  background-color: #aaa;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #fff;
+}
+.brandcontentClassify ul li a span:nth-of-type(2) {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.brandcontentClassify ul li a p {
+  margin-left: 40px;
+  font-size: 13px;
+  color: #aaa;
+}
+.brandcontentClassify ul li a span:last-of-type {
+  float: right;
+  margin-top: -39px;
+  margin-right: 15px;
+  font: 100 20px/15px consolas;
+  color: #bbb;
+}
+.xiaoliang {
+  padding: 15px;
+}
+.xiaoliang .media {
+  border-bottom: 1px solid #eee;
+}
+.xiaoliang .media > a {
+  display: inline-block;
+}
+.xiaoliang .media .media-body p:last-of-type {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.xiaoliang .media-object {
+  width: 100px;
+  height: 100px;
+}
+.xiaoliang .price {
+  color: #aaa;
+  display: inline-block;
+  margin-top: 10px;
+}
+.xiaoliang .star {
+  color: orange;
+  font-size: 25px;
+  float: right;
+  margin-bottom: 10px;
+  height: 25px;
+}
+#proMes .mesTit {
+  padding: 15px;
+}
+#proMes .mesTit img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+}
+#proMes .mesTit span {
+  display: inline-block;
+  width: 60%;
+  font-size: 15px;
+  float: left;
+  color: #aaa;
+}
+#proMes .mesTxt {
+  padding: 10px;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+}
+#proMes .mesTxt .id {
+  float: left;
+  font-size: 15px;
+  line-height: 35px;
+}
+#proMes .mesTxt .star {
+  float: left;
+  color: orange;
+  font-size: 25px;
+}
+#proMes .mesTxt .data {
+  float: right;
+  line-height: 35px;
+  color: #aaa;
+}
+#proMes .mesTxt p {
+  font-size: 16px;
+}
+.sanjiao {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 15px solid #eee;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -28px;
+  left: 37px;
+}

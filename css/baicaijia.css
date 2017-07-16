@@ -1,0 +1,173 @@
+#header {
+  position: relative;
+  background-color: #F4483E;
+}
+#header .logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font: 400 32px/48px consolas;
+  margin-left: 15px;
+}
+#header span {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.baicaiNavTab {
+  overflow: hidden;
+}
+.baicaiNavTab .bcj-title {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+}
+.baicaiNavTab .bcj-title ul {
+  width: 590px;
+  list-style: none;
+  height: 30px;
+  background-color: #fff;
+}
+.baicaiNavTab .bcj-title ul li {
+  float: left;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.baicaiNavTab .bcj-title ul .active {
+  border-bottom: 2px solid #FF5E5D;
+}
+.baicaiNavTab .bcj-title ul .active a {
+  color: #FF5E5D;
+}
+.baicaiNavTab .bcjList {
+  margin-top: 5px;
+  background-color: #fff;
+  padding: 15px 0;
+}
+.baicaiNavTab .bcjList ul {
+  list-style: none;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  border-bottom: 5px solid #eee;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .pic {
+  width: 130px;
+  float: left;
+  margin: 0  5px 0 10px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .t {
+  font-size: 15px;
+  font-weight: bold;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .pr {
+  margin-top: 10px;
+  font-style: normal;
+  color: #FF5E5D;
+  font-size: 20px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .pr i {
+  font-style: normal;
+  font-size: 14px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .pr em {
+  font-size: 12px;
+  color: #FF5E5D;
+  margin-right: 5px;
+  font-style: normal;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .pr del {
+  font-size: 12px;
+  color: #ccc;
+  margin-left: 15px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .bar {
+  margin-top: 10px;
+  display: inline-block;
+  float: left;
+  border: 1px solid #FF5E5D;
+  width: 90px;
+  height: 15px;
+  border-radius: 7px;
+  background-color: #FFB7B7;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .bar div:first-of-type {
+  position: relative;
+  border: 1px solid #FF5E5D;
+  height: 10px;
+  margin-top: 2px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .bar div:first-of-type span {
+  font-size: 10px;
+  margin-top: -10px;
+  position: absolute;
+  top: 5px;
+  left: 35px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .b {
+  width: 100%;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .b .q {
+  display: inline-block;
+  padding: 3px 5px;
+  border: 1px dashed #FF5E5D;
+  margin-top: 17px;
+  float: left;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .b .q a {
+  font-size: 12px;
+  color: #FF5E5D;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .b .g {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  text-align: center;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .b .g a {
+  display: inline-block;
+  width: 58px;
+  height: 28px;
+  background-color: #FF5E5D;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 28px;
+}
+.baicaiNavTab .bcjList ul .ui-border-tb .inf .o .jindutiao > span {
+  float: left;
+  margin-left: 15px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #FF5E5D;
+}
+.baicaiNavTab .bcjList .pic img {
+  width: 130px;
+  height: 130px;
+}
+.goTop {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}

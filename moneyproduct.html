@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/moneyproduct.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="moneyctrl.html" class="logo" >
+            <
+        </a>
+        <span>国内折扣</span>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--主体-->
+<div id="moneyProduct" >
+    <!--<h3>海天酱油</h3>-->
+    <!--<span>京东商城</span>-->
+    <!--<span>19:20 7/9</span>-->
+    <!--<span>小欣欣</span>-->
+    <!--<div class="content">-->
+        <!--<span></span>-->
+        <!--<img src="images/deli.png" alt="">-->
+    <!--</div>-->
+    <!--<p></p>-->
+    <!--<img src="images/deli.png" alt="">-->
+    <!--<div class="productCity"></div>-->
+</div>
+
+
+<div class="goBuy">
+    <a href="#">前往购买</a>
+</div>
+<img src="images/mmbweixin2.png" alt="" class="weixin">
+<!--<div class="toComment">-->
+<!--<p>发表评论</p>-->
+    <!--<input type="text">-->
+    <!--<div>-->
+        <!--<a href="#">发表评论</a>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="newComment">
+    <!--<p>最新评论</p>-->
+    <img src="images/haitao.png" alt="">
+   <div>
+       <span>id</span>
+       <span>日期</span>
+   </div>
+    <p>内容</p>
+
+</div>
+
+<!--底部-->
+<section id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="moneyProductTemp">
+    {{each result as value i}}
+    <h3>{{value.productName}}</h3>
+    <span>{{value.productFrom}}</span>
+    <span>{{value.productTime}}</span>
+    <span>{{value.productTips}}</span>
+    <div class="content clearfix">
+        <span>{{value.productInfo}}</span>
+        {{#value.productImgSm}}
+    </div>
+    <p>{{value.productInfo1}}</p>
+    {{#value.productImgLg}}
+    <div class="productCity">
+        {{#value.productCity}}
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="comTemp">
+    <!--<p>最新评论</p>-->
+    {{each result as value i}}
+   {{#value.productComment}}
+    {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/moneyproduct.js"></script>
+<script src="js/base.js"></script>
+</html>

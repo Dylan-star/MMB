@@ -1,0 +1,46 @@
+.classify {
+  width: 98%;
+  margin: 1%;
+}
+.classify .panel-group .panel-heading {
+  padding: 0 ;
+}
+.classify .panel-group .panel-heading .panel-title {
+  font-weight: 900;
+  display: block;
+  width: 100%;
+}
+.classify .panel-group .panel-heading .panel-title a {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.classify .panel-group .panel-heading .panel-title a span > img {
+  float: right;
+  margin-top: 23px;
+}
+.classify .panel-group .panel-body {
+  text-align: center;
+  padding: 0;
+}
+.classify .panel-group .panel-body .row {
+  width: 100%;
+  margin: 0;
+}
+.classify .panel-group .panel-body .row div {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #cccccc !important;
+  border-right: 1px solid #cccccc !important;
+  padding: 0;
+}
+.classify .panel-group .panel-default {
+  margin-top: 0;
+  border-top: none;
+}
+.classify .panel-group .panel-default .panel-heading {
+  background-color: #EDEDED;
+}

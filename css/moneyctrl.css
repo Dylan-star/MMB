@@ -1,0 +1,118 @@
+#header {
+  position: relative;
+}
+#header .logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font: 400 32px/48px consolas;
+  margin-left: 15px;
+}
+#header span {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#ctrProduct .media {
+  background-color: #fff;
+  padding: 5px 0 10px 15px;
+  max-width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+#ctrProduct .media img {
+  width: 100px;
+  height: 100px;
+}
+#ctrProduct .media .media-body {
+  padding-right: 10px;
+}
+#ctrProduct .media .media-body div {
+  height: 100%;
+  margin-bottom: 10px;
+}
+#ctrProduct .media .media-body div p {
+  font-size: 13px;
+  color: #0f0f0f;
+  line-height: 19px;
+}
+#ctrProduct .media .media-body div p span {
+  color: #ff6c00;
+}
+#ctrProduct .media .media-body p {
+  display: inline-block;
+  height: 27px;
+  font-size: 12px;
+  line-height: 27px;
+  color: #a1a1a1;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+#ctrProduct .media .media-body i {
+  margin-top: 20px;
+}
+#ctrProduct .media .media-body i img {
+  width: 15px;
+  height: 13px;
+  float: right;
+  margin-right: 25px;
+  margin-top: 17px;
+}
+#ctrProduct .media .media-body i span {
+  font-size: 10px;
+  color: #a1a1a1;
+  float: right;
+  font-style: normal;
+  margin-right: -28px;
+  margin-top: 14px;
+}
+#footer .btn {
+  width: 100%;
+}
+#footer .btn a {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  line-height: 35px;
+}
+#footer .btn #btPr {
+  float: left;
+  margin-left: 10px;
+}
+#footer .btn #btNe {
+  float: right;
+  margin-right: 10px;
+}
+#footer .btn .dropdown {
+  display: inline-block;
+  height: 20px;
+  margin: 0 auto;
+}
+#footer .btn .dropdown #dLabel {
+  width: 80px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 30px;
+  border-radius: 5px;
+}
+#footer .btn .dropdown #dLabel :active {
+  border: none;
+}
+#footer .btn .dropdown ul.dropdown-menu {
+  border-top: 0;
+  border-radius: 0;
+  width: 80px!important;
+  min-width: 80px;
+  margin-top: 6px;
+  text-align: center;
+  max-height: 100px;
+  overflow: scroll;
+}

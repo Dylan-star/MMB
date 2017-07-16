@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/productlist.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="index.html" class="logo" >
+            <img src="images/header_logo.png" alt="" >
+        </a>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <div class="searchBox">
+        <input type="search" placeholder="请输入你想比价的商品">
+    </div>
+    <div class="btn">
+        <a href="javascript:;">搜索</a>
+    </div>
+</section>
+<!--三级导航-->
+<div id="nav">
+    <a href="index.html">首页</a>
+    >
+    <a href="category.html">全部分类</a>
+    >
+    <a href="#" id="change"></a>
+    >
+    <input type="button" value="筛选">
+</div>
+<!--商品列表-->
+<div id="product">
+    <!--<div class="media">-->
+        <!--<div class="media-left">-->
+            <!--<a href="#" class="media-object">-->
+                <!--<img src="images/deli.png" alt="...">-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="media-body">-->
+            <!--<div class="mainmes">-->
+                <!--<p class="media-heading">得力总控开关插线板-->
+                <!--</p>-->
+                <!--<h4><span>￥</span>5000</h4>-->
+            <!--</div>-->
+            <!--<p>9商城报价</p>-->
+            <!--<span>有200人评论</span>-->
+        <!--</div>-->
+    <!--</div>-->
+    </div>
+ </div>
+</div>
+<!--底部-->
+<section id="footer">
+    <div class="btn">
+        <a href="#" id="btPr">上一页</a>
+        <div class="dropdown">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                1/3
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+            </ul>
+        </div>
+        <a href="#" id="btNe">下一页</a>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="proTemp">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="bijia.html?categoryid={{value.categoryId}}&productid={{value.productId}}" class="media-object">
+                {{#value.productImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <div class="mainmes">
+                <a href="bijia.html?categoryid={{value.categoryId}}&productid={{value.productId}}"> <p class="media-heading">{{value.productName}}</p>
+                    <h4><span>￥</span>{{value.productPrice.replace("￥","")}}</h4></a>
+            </div>
+            <p>{{value.productQuote}}</p>
+            <span>{{value.productCom}}</span>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/productlist.js"></script>
+<script src="js/base.js"></script>
+</html>

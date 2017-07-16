@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+    <script type="text/javascript" src="lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div>
+        <a href="index.html" class="logo" >
+           <
+        </a>
+        <span>省钱控 - 最新优惠</span>
+        <a href="javascript:;"  class="app">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--主体-->
+<div id="ctrProduct">
+    <!--<div class="media">-->
+        <!--<div class="media-left">-->
+            <!--<a href="#">-->
+                <!--<img class="media-object" src="images/deli.png" alt="...">-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="media-body">-->
+            <!--<div>-->
+                <!--<p class="media-heading">得力总控开关插线板<span>10元包邮</span>-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<p>京东商城 | 07-09 12:50</p>-->
+            <!--<i>-->
+                <!--<img src="images/message.png" alt="">-->
+                <!--<span>1</span>-->
+            <!--</i>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+
+<!--底部-->
+<section id="footer">
+    <div class="btn">
+        <a href="#" id="btPr">上一页</a>
+        <div class="dropdown">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+            </ul>
+        </div>
+        <a href="#" id="btNe">下一页</a>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="javascript:;">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="backTop"><img src="images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <a href="javascript:;">
+                <span>手机APP下载</span>
+                慢慢买手机版
+            </a>
+            &nbsp--&nbsp掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/html" id="ctrTemp">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="moneyproduct.html?productid={{value.productId}}">
+               {{#value.productImgSm}}
+            </a>
+        </div>
+        <div class="media-body">
+            <div>
+                <p class="media-heading">{{value.productName}}<span>{{value.productPinkage}}</span>
+                </p>
+            </div>
+            <p>{{value.productFrom}} | {{value.productTime}}</p>
+            <i>
+                <img src="images/message.png" alt="">
+                <span>{{value.productComCount.replace('有','').replace('人评论','')}}</span>
+            </i>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/moneyctrl.js"></script>
+<script src="js/base.js"></script>
+</html>

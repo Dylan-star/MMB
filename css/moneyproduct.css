@@ -1,0 +1,171 @@
+body {
+  background-color: #fff;
+}
+#header {
+  position: relative;
+}
+#header .logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font: 400 32px/48px consolas;
+  margin-left: 15px;
+}
+#header span {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#moneyProduct {
+  padding: 10px;
+}
+#moneyProduct h3 {
+  text-align: center;
+}
+#moneyProduct span {
+  color: #bbb;
+  font-size: 14px;
+  margin-left: 10px;
+}
+#moneyProduct .content {
+  vertical-align: middle;
+  margin-top: 10px;
+  width: 100%;
+}
+#moneyProduct .content span {
+  display: inline-block;
+  width: 65%;
+  color: #000;
+  font-size: 20px;
+  float: left;
+}
+#moneyProduct .content img {
+  display: inline-block;
+  width: 30% ;
+  float: left;
+}
+#moneyProduct > p {
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#moneyProduct > img {
+  width: 80%;
+  margin-left: 10%;
+}
+#moneyProduct > .productCity #disstorck {
+  margin-top: 20px;
+  margin-left: 35%;
+  width: 30%;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  text-align: center;
+}
+#moneyProduct > .productCity #disstorck li {
+  border-bottom: 1px dashed #ccc;
+  width: 100%;
+}
+#moneyProduct > .productCity #disstorck li span strong {
+  margin-left: 20px;
+}
+.goBuy {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #FBFBFB;
+  text-align: center;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.goBuy a {
+  color: #fff;
+}
+.weixin {
+  width: 100%;
+  margin-top: 20px;
+}
+.newComment {
+  padding: 10px;
+}
+.newComment .userimg {
+  display: inline-block;
+}
+.newComment .userimg img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.newComment .con {
+  width: 80%;
+}
+.newComment .con .username {
+  font-size: 15px;
+  color: #00b3ee;
+  float: left;
+}
+.newComment p:last-of-type {
+  font-size: 18px;
+}
+.newComment .ui-border-b > div {
+  float: left;
+}
+.newComment #ctl00_ContentBody_txt_nr {
+  width: 95%;
+  margin-left: 3.5%;
+  height: 100px;
+}
+.newComment #newcomment {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.tjdp {
+  float: right;
+  margin-right: 2.5%;
+  background-color: #FF841D;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.list .time {
+  font-size: 12px!important;
+  float: right!important;
+  color: #ccc;
+  width: 50%;
+  text-align: right;
+}
+.list .content {
+  font-size: 15px;
+}
+.list > ul {
+  float: left;
+  list-style: none;
+  width: 100%;
+}
+.list > ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.list .name {
+  width: 100%;
+}
+.lisy::before,
+.list::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0px;
+  clear: both;
+  visibility: hidden;
+}
